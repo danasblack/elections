@@ -1,0 +1,11 @@
+<h1> All Candidates </h1>
+
+<% @candidates.each do |candidate| %>
+  <div>
+  <h2><img src = <%= candidate.image %>></h2>
+  <h2><%= candidate.name %></h2>
+  <h2><%= candidate.party_affiliation %></h2>
+  <h2><%= candidate.experience %></h2>
+  <h2><%= candidate.background %></h2>
+ </div>
+<% end %>
