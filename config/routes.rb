@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+ devise_for :users
+get '/' => 'elections#index'
+  
   get '/elections' => 'elections#index'
   get '/elections/new' => 'elections#new'
   post '/elections' => 'elections#create'
@@ -6,6 +9,10 @@ Rails.application.routes.draw do
   delete '/elections/:id' => 'elections#destroy'
   patch '/elections/:id' => 'elections#update'
   get '/elections/:id' => 'elections#show'
+
+  get '/ballotcandidates' => 'ballotcandidates#index'
+  post '/ballotcandidates' => 'ballotcandidates#create'
+  get '/ballotcandidates/:id' => 'ballotcandidates#show' 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

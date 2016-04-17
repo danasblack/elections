@@ -1,11 +1,12 @@
-<h1> All Candidates </h1>
+<h1> 2016 Presidential Candidates </h1>
 
 <% @candidates.each do |candidate| %>
   <div>
-  <h2><img src = <%= candidate.image %>></h2>
-  <h2><%= candidate.name %></h2>
-  <h2><%= candidate.party_affiliation %></h2>
-  <h2><%= candidate.experience %></h2>
-  <h2><%= candidate.background %></h2>
+  <h3><img src = <%= candidate.image %>></h5>
+  <h5> Name : <a href ="/elections/<%= candidate.id %>"><%= candidate.name %></a></h5>
+  <h5> Party Affiliation : <%= candidate.party_affiliation %></h5>
+  <h5> Experience : <%= candidate.experience %></h5>
+  <h5> Background : <%= candidate.background %></h5>
  </div>
 <% end %>
+

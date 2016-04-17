@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  party_candidate_id: 1
+  user_id: 1
+  choice_id: 1
+
+two:
+  party_candidate_id: 1
+  user_id: 1
+  choice_id: 1

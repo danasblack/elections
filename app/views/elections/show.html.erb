@@ -1,0 +1,15 @@
+  <h2><img src = <%= @candidate.image %>></h2>
+  <h5> Name : <%= @candidate.name %></h5>
+  <h5> Party Affiliation : <%= @candidate.party_affiliation %></h5>
+  <h5> Experience : <%= @candidate.experience %></h5>
+  <h5> Background : <%= @candidate.background %></h5>
+  <a href="/elections"> Back to all candidates</a>
+
+  <%= form_tag '/ballotcandidates', method: :post do %>
+
+  <div>
+   <%= hidden_field_tag :partycandidate_id, @partycandidate_id %>
+  </div> 
+  <div>
+   <%= submit_tag "Add Candidate to Ballot" %>
+<% end %>  
