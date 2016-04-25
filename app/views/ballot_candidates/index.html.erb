@@ -1,0 +1,11 @@
+<h1>Your Ballot</h1>
+<% @ballotcandidates.each do |ballotcandidate| %>
+  <h2><%= @partycandidate.name %></h2>
+  <%= link_to "Remove item from ballot", "/ballotcandidates/#{ballotcandidate.id}", method: :delete %>
+<% end %>
+
+<%= form_tag "/ballot", method: :post do %>
+  <%= submit_tag "Confirm Candidate" %>
+<% end %>
+
+<a href="/elections"> Back to all candidates</a>

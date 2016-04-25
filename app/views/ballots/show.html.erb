@@ -1,0 +1,11 @@
+<h1>Your Voting Info</h1>
+<h3>Purchased at: <%= @ballot.created_at %>
+<h3>Email: <%= current_user.email %></h3>
+
+
+<% @ballot.ballotcandidates.each do |ballotcandidate| %>
+  <h2>Name: <%= ballotcandidate.partycandidate.name %></h2>
+  <h5>Party Affiliation: <%= partycandidate.party_affiliation %></h5>
+<% end %>
+
+ <a href="/elections"> Back to all products</a>

@@ -1,5 +1,5 @@
 class BallotCandidate < ActiveRecord::Base
-  belongs_to :users
-  belongs_to :partycandidates
-  belongs_to :ballots
+  belongs_to :user
+  belongs_to :party_candidate
+  belongs_to :ballot
 end
