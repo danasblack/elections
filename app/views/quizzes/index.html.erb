@@ -1,10 +1,15 @@
-<div ng-app="app">
-<div ng-controller="quizCtrl"> 
- <p> {{message}} </p>
+<h1> Quiz Questions </h1>
+<h5> Choose your stance of the following issues </h5>
 
- <div id="questions">
-  <h2 ng-repeat="question in questions"</h2>
- </div>
-
+<% @questions.each do |question| %>
+  <div>
+  <h4>  Question <%= question.question_id %> : <%= question.text %></h4>
 </div>
+<ol>
+   <% @answers.each do |answer| %>
+      <input id="accept" name="accept" type="checkbox" value="1"><%= answer.text %></input>
+   <% end %>
+</ol>
+<% end %>
 
+<%= submit_tag "Find Your Ideal Candidate" %>

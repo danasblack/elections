@@ -1,12 +1,18 @@
 <h1> 2016 Presidential Candidates </h1>
 
+
 <% @candidates.each do |candidate| %>
-  <div class="col-md-2">
+ <div class="col-md-2">
+<div class="well" style="width: 120%;">
+ 
   <h3><img src = <%= candidate.image %>></h5>
   <h5> Name : <a href ="/elections/<%= candidate.id %>"><%= candidate.name %></a></h5>
   <h5> Party Affiliation : <%= candidate.party_affiliation %></h5>
   <h5> Experience : <%= candidate.experience %></h5>
   <h5> Background : <%= candidate.background %></h5>
+   <input id="accept" name="accept" type="checkbox" value="1"> Compare </input>
+ </div>
  </div>
 <% end %>
 
+<%= button_tag "Compare Now" %>

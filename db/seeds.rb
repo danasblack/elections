@@ -35,3 +35,37 @@ PartyCandidate.create(
  background: 'Hillary Clinton first rose to elective office in 2001 and stepped down from an elected position in 2009. Clinton has served as an elected official for a total of 8 years, which is 7 less than the average 2016 presidential candidate (15 years).', 
 image: 'https://s.graphiq.com/sites/default/files/980/media/images/t2/Hillary_Clinton_1786283.jpg',
 )
+
+Question.create(
+  question_id: "1", 
+  text: "Enforce against wage discrimination based on gender"
+  )
+Question.create(
+  question_id: "2", 
+  text:  "ENDA: prohibit employment discrimination for gays"
+  )
+Question.create(
+  question_id: "3", 
+  text:  "NO on allowing school prayer during the War on Terror"
+  )
+Question.create(
+  question_id: "4", 
+  text: "Make tax deduction permanent for conservation easements"
+  )
+Answer.create(
+  answer_id: "1", 
+  text: "Strongly Favor"
+  )
+Answer.create(
+  answer_id: "2", 
+  text: "Favor"
+  )
+Answer.create(
+  answer_id: "3", 
+  text: "Oppose"
+  )
+Answer.create(
+  answer_id: "4", 
+  text: "Strongly Oppose"
+  )
+
