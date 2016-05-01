@@ -1,15 +1,23 @@
 <h1> Quiz Questions </h1>
-<h5> Choose your stance of the following issues </h5>
+<h5> Choose your stance on the following issues </h5>
 
 <% @questions.each do |question| %>
   <div>
   <h4>  Question <%= question.question_id %> : <%= question.text %></h4>
 </div>
 <ol>
+<%= form_tag '/quizzes', method: :post do %>
    <% @answers.each do |answer| %>
-      <input id="accept" name="accept" type="checkbox" value="1"><%= answer.text %></input>
+   <div>
+      <h5><%=check_box_tag "Answer.text", answer.text%></h5>
    <% end %>
 </ol>
 <% end %>
 
+<% end %>
 <%= submit_tag "Find Your Ideal Candidate" %>
+
+
+ <a href="/products"> Back to all products</a>
+
+

@@ -1,5 +1,5 @@
 class PartyCandidate < ActiveRecord::Base
   has_many :users
-  has_many :partycandidates
-  has_many :ballotcandidates
+  has_many :party_candidates
+  has_many :ballot_candidates
 end

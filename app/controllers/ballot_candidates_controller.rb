@@ -17,7 +17,6 @@ class BallotCandidatesController < ApplicationController
 
   def index
     @ballotcandidates = current_user.ballot_candidates
-    @partycandidate = PartyCandidate.all
     render 'index.html.erb'
   end
 end

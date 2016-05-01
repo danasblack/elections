@@ -1,11 +1,20 @@
 <h1>Your Ballot</h1>
 <% @ballotcandidates.each do |ballotcandidate| %>
-  <h2><%= @partycandidate.name %></h2>
+  <h5><%= ballotcandidate.party_candidate %></h5>
   <%= link_to "Remove item from ballot", "/ballotcandidates/#{ballotcandidate.id}", method: :delete %>
 <% end %>
 
 <%= form_tag "/ballot", method: :post do %>
   <%= submit_tag "Confirm Candidate" %>
 <% end %>
+
+<h2>Find Your Nearest Polling Location</h2>
+
+<script type="text/javascript" src="https://voter-info-tool.appspot.com/js/loader.js"></script>
+<div id="_vit"></div>
+<script type="text/javascript">vit.load({election_id:2000});</script>
+  
+   
+ 
 
 <a href="/elections"> Back to all candidates</a>
