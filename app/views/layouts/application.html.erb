@@ -1,49 +1,65 @@
+
+
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+
+
+
+
+
+<!-- Wrap Bootstrap -->
+
+
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Election</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <title>Numo | Flat Portfolio</title>
+    <!-- CSS -->
+    <!--===============================================================-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-</head>
-<body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/elections">BlueBallot</a>
-    </div>
+  </head>
+  <body>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Compare <span class="sr-only">(current)</span></a></li>
-        <li><a href="/quizzes">Take the Quiz</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Election Info <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search for Candidates">
+  <!-- NAVBAR-->
+  <!--===============================================================-->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" data-scroll href="#home"><img src="assets/images/logo.png" alt="logo"></a>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/quizzes">Take the Quiz</a></li>
+            <li><a data-scroll href="#skills">Compare</a></li>
+            <li><a data-scroll href="#services">Voter Information</a></li>
+          </ul>
+         
       <ul class="nav navbar-nav navbar-right">
         <% if current_user == nil %>
          <%= link_to "Log in", "/users/sign_in" %>
@@ -55,15 +71,254 @@
         <li><a href="/ballotcandidates">View Ballot</a></li>
       <% end %>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+        </div>
+      </div>
+    </div>
 
+
+    <!-- INTRO-->
+    <!--===============================================================-->
+    <div class="bg-intro" id="home">
+      <div class="layer-intro">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="text-center"><br> Find the right candidate for you</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arrow-down"></div>
 <%= yield %>
+    <!-- PORTFOLIO-->
+    <!--===============================================================-->
+    <div class="bg-portfolio" id="portfolio">
+      <div class="container">
 
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="title">LATEST WORK</h2>
+            <hr>
+          </div>
+        </div>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+        <div class="row row-portfolio">
+          <div class="col-sm-4 margin-bottom-xs">
+              <a class="lightbox wrapper-portfolio" href="assets/images/640x480.gif">
+                <img class="img-responsive" src="assets/images/320x340.gif" alt="portfolio-1">
+                <h3 class="category">Web Design</h3>
+              </a>
+          </div>
+          <div class="col-sm-4 margin-bottom-xs">
+              <a class="lightbox wrapper-portfolio" href="assets/images/640x480.gif">
+                <img class="img-responsive" src="assets/images/320x340.gif" alt="portfolio-2">
+                <h3 class="category">Logo Design</h3>
+              </a>
+          </div>
+          <div class="col-sm-4">
+              <a class="lightbox wrapper-portfolio" href="assets/images/640x480.gif">
+                <img class="img-responsive" src="assets/images/320x340.gif" alt="portfolio-3">
+                <h3 class="category">Development</h3>
+              </a>
+          </div>
+        </div>
 
-</body>
+      </div>
+    </div>
+
+    <!-- SKILLS-->
+    <!--===============================================================-->
+    <div class="bg-skills" id="skills">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-6 margin-bottom-xs">
+            <h2>MY SKILLS</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque metus at metus tristique tincidunt. <br>Quisque luctus aliquam dolor et consectetur. Nullam viverra diam sed dignissim congue. Aenean eget mauris quis eros convallis ornare. Fusce sed erat purus. Nam egestas venenatis elit eget cursus.
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <h4>Adobe Illustrator</h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                <span class="sr-only"></span>
+              </div>
+            </div>
+            <h4>Photoshop</h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                <span class="sr-only"></span>
+              </div>
+            </div>
+            <h4>HTML5 - CSS3</h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                <span class="sr-only"></span>
+              </div>
+            </div>
+            <h4>Javascript</h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                <span class="sr-only"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SERVICES-->
+    <!--===============================================================-->
+    <div class="bg-services" id="services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="title">SERVICES</h2>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row margin-bottom">
+          <div class="col-sm-6 margin-bottom-xs">
+            <div class="row">
+              <div class="col-xs-2">
+                <i class="fa fa-code fa-4x"></i>
+              </div>
+              <div class="col-xs-10">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque metus at metus tristique tincidunt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-xs-2">
+                <i class="fa fa-pencil-square-o fa-4x"></i>
+              </div>
+              <div class="col-xs-10">
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque metus at metus tristique tincidunt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row margin-bottom">
+          <div class="col-sm-6 margin-bottom-xs">
+            <div class="row">
+              <div class="col-xs-2">
+                <i class="fa fa-desktop fa-4x"></i>
+              </div>
+              <div class="col-xs-10">
+                <h3>Brand Identity</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque metus at metus tristique tincidunt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-xs-2">
+                <i class="fa fa-bolt fa-4x"></i>
+              </div>
+              <div class="col-xs-10">
+                <h3>Fast Delivery</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque metus at metus tristique tincidunt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 margin-bottom-xs">
+            <div class="row">
+              <div class="col-xs-2">
+                <i class="fa fa-comments fa-4x"></i>
+              </div>
+              <div class="col-xs-10">
+                <h3>7/24 Support</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque metus at metus tristique tincidunt.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-xs-2">
+                <i class="fa fa-mobile"></i>
+              </div>
+              <div class="col-xs-10">
+                <h3>Responsive Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque metus at metus tristique tincidunt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT-->
+    <!--===============================================================-->
+    <div class="bg-contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h3>Feel free to contact me for your next project</h3>
+              <!-- YOUR E-MAIL-->
+            <a href="mailto:example@example.com" class="mail"><span class="glyphicon glyphicon-envelope"></span>E-MAIL</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER-->
+    <!--===============================================================-->
+    <div class="bg-footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-sm-12">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-tumblr"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER-BOTTOM-->
+    <!--===============================================================-->
+    <div class="bg-footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="copyright">2014 &copy; Mamoot Studio - All Rights Reserved</p>
+          </div>
+          <div class="col-sm-6">
+            <ul class="list-inline pull-right">
+              <li class="border-right"><a href="#home" data-scroll>Top</a></li>
+              <li class="border-right"><a href="#portfolio" data-scroll>Portfolio</a></li>
+              <li class="border-right"><a href="#skills" data-scroll>Skills</a></li>
+              <li><a href="#services" data-scroll>Services</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT-->
+    <!--===============================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/jRespond.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

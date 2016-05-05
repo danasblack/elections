@@ -1,5 +1,4 @@
 class BallotCandidatesController < ApplicationController
-  BallotCandidatesController
   def create
     if current_user
       name = params[:name]
@@ -16,7 +15,7 @@ class BallotCandidatesController < ApplicationController
   end 
 
   def index
-    @ballotcandidates = current_user.ballot_candidates
+    @ballotcandidates = BallotCandidate.all
     render 'index.html.erb'
   end
 end

@@ -1,4 +1,3 @@
 class Quiz < ActiveRecord::Base
-  def match
-  end 
+  has_many :answers
 end
