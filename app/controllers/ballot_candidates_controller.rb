@@ -5,7 +5,7 @@ class BallotCandidatesController < ApplicationController
 
       @ballotcandidates = BallotCandidate.create(
         party_candidate_id: params[:party_candidate_id],
-        user_id: current_user.id, 
+        user_id: current_user.id 
       )
       flash[:success] = "Candidate added to your ballot"
       redirect_to '/ballotcandidates' 

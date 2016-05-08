@@ -9,11 +9,10 @@ class BallotsController < ApplicationController
     @ballotcandidates.update_all(status: "added", ballot_id: ballot.id)
 
     redirect_to "/ballots/#{ballot.id}"
-  end
+    end
 
-  def show
-    @ballot = Ballot.find_by(id: params[:id])
-    render 'show.html.erb'
-  end
-end
+    def show
+      @ballot = Ballot.find_by(id: params[:id])
+      render 'show.html.erb'
+    end
 end

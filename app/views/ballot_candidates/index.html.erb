@@ -1,7 +1,9 @@
 <h1>Your Ballot</h1>
 <% @ballotcandidates.each do |ballotcandidate| %>
-  <h5><%= ballotcandidate.party_candidate.name %></h5>
-  <%= link_to "Remove item from ballot", "/ballotcandidates/#{ballotcandidate.id}", method: :delete %>
+  <% if ballotcandidate.party_candidate %>
+    <h5><%= ballotcandidate.party_candidate.name %></h5>
+    <%= link_to "Remove item from ballot", "/ballotcandidates/#{ballotcandidate.id}", method: :delete %>
+  <% end %>
 <% end %>
 
 <%= form_tag "/ballot", method: :post do %>

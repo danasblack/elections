@@ -191,8 +191,8 @@ hr {
 }
 
 .navbar-brand img {
-    width: 108px;
-    margin-top: 18px;
+    width: 150px;
+    margin-top: 10px;
     /*transition*/
     -webkit-transition: all .22s ease-out;
     -moz-transition: all .22s ease-out;
