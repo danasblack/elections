@@ -314,6 +314,7 @@ hr {
     background-size: cover;
 }
 
+
 .bg-intro .row {
     padding-top: 242px;
     padding-bottom: 150px;
@@ -418,7 +419,7 @@ hr {
     margin: 0 auto;
     position: relative;
     display: block;
-    background-color: #34495E;
+    background-color: white;
     max-width: 320px;
     /*box-shadow*/
     -webkit-box-shadow: 0px 6px 0 0 rgba(0,0,0,0.08);
@@ -496,7 +497,7 @@ hr {
 }
 
 .progress-bar {
-    background-color: #34495E;
+    background-color: white;
 }
 
 @media (max-width:767px) {
@@ -826,13 +827,13 @@ hr {
     border-radius:4px;
     position: relative;
     display: block;
-    background-color: #34495E;
+    background-color: white;
     margin-bottom:20px;
     max-width:350px;
 }
 
 .wrapper-thumbnail img {
-    border-radius:4px;
+    border-radius:2px;
     /*transition*/
     -webkit-transition: opacity .22s ease-out;
     -moz-transition: opacity .22s ease-out;

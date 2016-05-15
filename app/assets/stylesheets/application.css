@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+.content {
+  margin-top: 100px;
+}
+.jumbotron {
+  background-image: url("Mountrushmore.jpg");
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"
+}

@@ -15,4 +15,4 @@
 //= require jquery_ujs
 //= require angular
 //= require app
-//= require_tree .
+//= require_tree

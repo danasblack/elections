@@ -18,8 +18,13 @@ Rails.application.routes.draw do
   get '/ballotcandidates/:id' => 'ballot_candidates#show' 
 
   get '/quizzes' => 'quizzes#index'
-  post '/quizzes' => 'quizzes#create'
 
+  namespace :api do
+    namespace :v1 do
+      get '/quizapps' => 'quizapps#index'
+      post '/quizapps' => 'quizapps#create'
+    end
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

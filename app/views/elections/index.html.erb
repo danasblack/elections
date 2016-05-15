@@ -11,7 +11,39 @@
     </div>
     <div class="arrow-down"></div>
 
-<h1> The 2016 President Race </h1>
+
+    <!-- PORTFOLIO-->
+    <!--===============================================================-->
+    <div class="bg-portfolio" id="portfolio">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="title">The 2016 President Race</h1>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row row-portfolio">
+          <% @candidates.each do |candidate| %>
+            <div class="col-sm-3 margin-bottom-xs">
+              <a class="lightbox wrapper-portfolio" href="<%= candidate.image %>">
+                <img class="img-responsive" src="<%= candidate.image %>" alt="portfolio-1">
+                <h3 class="category">More info</h3>
+              </a>
+        <div class="well well-lg">
+              <h2>Name : <a href ="/elections/<%= candidate.id %>"><%= candidate.name %></a></h2>
+              <p>Political Party: <%= candidate.party_affiliation %></p>
+              <p>Background: <%= candidate.background %></p>
+              <input id="accept" name="accept" type="checkbox" value="1"> Compare </input>
+            </div>
+        </div>
+          <% end %>
+        </div>
+        </div>
+      </div>
+
+<h1> Local Elections Race </h1>
  <div class="container-fluid">
   <div class="row">
 <form class="navbar-form navbar-left" role="search">
@@ -23,46 +55,5 @@
  </div>
  </div>
 
- <div class="row row-portfolio">
-          <div class="col-sm-3 margin-bottom-xs">
-              <a class="lightbox wrapper-portfolio" href="assets/images/640x480.gif">
-                <img class="img-responsive" src="<%= PartyCandidate.first.image %>" alt="portfolio-1">
-                <h3 class="category">Web Design</h3>
-                 <h5> Name : <%= PartyCandidate.first.name %></h5>
-                 <h5> Party Affiliation : <%= PartyCandidate.first.party_affiliation %></h5>
-                 <h5> Experience : <%= PartyCandidate.first.experience %></h5>
-                 <h5> Background : <%= PartyCandidate.first.background %></h5>
-              </a>
-          </div>
-          <div class="col-sm-3 margin-bottom-xs">
-              <a class="lightbox wrapper-portfolio" href="assets/images/640x480.gif">
-                <img class="img-responsive" src="<%= PartyCandidate.second.image %>" alt="portfolio-2">
-                <h3 class="category">Logo Design</h3>
-                 <h5> Name : <%= PartyCandidate.second.name %></h5>
-                 <h5> Party Affiliation : <%= PartyCandidate.second.party_affiliation %></h5>
-                 <h5> Experience : <%= PartyCandidate.second.experience %></h5>
-                 <h5> Background : <%= PartyCandidate.second.background %></h5>
-              </a>
-          </div>
-          <div class="col-sm-3">
-              <a class="lightbox wrapper-portfolio" href="assets/images/640x480.gif">
-                <img class="img-responsive" src="<%= PartyCandidate.third.image %>" alt="portfolio-3">
-                <h3 class="category">Development</h3>
-                 <h5> Name : <%= PartyCandidate.third.name %></h5>
-                 <h5> Party Affiliation : <%= PartyCandidate.third.party_affiliation %></h5>
-                 <h5> Experience : <%= PartyCandidate.third.experience %></h5>
-                 <h5> Background : <%= PartyCandidate.third.background %></h5>
-              </a>
-          </div>
-          <div class="col-sm-3">
-              <a class="lightbox wrapper-portfolio" href="assets/images/640x480.gif">
-                <img class="img-responsive" src="<%= PartyCandidate.fourth.image %>" alt="portfolio-3">
-                <h3 class="category">Development</h3>
-                 <h5> Name : <%= PartyCandidate.fourth.name %></h5>
-                 <h5> Party Affiliation : <%= PartyCandidate.fourth.party_affiliation %></h5>
-                 <h5> Experience : <%= PartyCandidate.fourth.experience %></h5>
-                 <h5> Background : <%= PartyCandidate.fourth.background %></h5>
-              </a>
-          </div>
-  </div>
+
 

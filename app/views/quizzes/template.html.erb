@@ -1,34 +1,59 @@
-<div class="quiz-area" ng-show="inProgress">
-  <div ng-show="!quizOver">
-    <h2 id="question">{{question}}</h2>
-    <ul id="options">
-      <li ng-repeat="option in options">
-        <label>
-          <input type="radio" name="answer" value="{{option}}">
-          {{option}}
-        </label>
-      </li>
-    </ul>
-    <button ng-click="checkAnswer()" ng-show="answerMode">Submit</button>
+<div ng-app="app">
+<div ng-controller="quizApp" ng-init="setup()">
 
-    <div ng-show="!answerMode">
-      <button ng-click="nextQuestion()" class="next-question">Next</button>
-      <span ng-show="correctAns">That is correct!</span>
-      <span ng-show="!correctAns">Sorry, that is an incorrect answer.</span>
-    </div>
-  </div>
-
-  <div ng-show="quizOver">
-    <h2>Quiz is over</h2>
-    <button ng-click="reset()">Play again</button>
-  </div>
-
-  <div id="score">
-    Score: {{score}}
-  </div>
-</div>
+<!-- Quiz start -->
 
 <div class="intro" ng-show="!inProgress">
-  <p>Welcome to the QuizApp</p>
-  <button id="startQuiz" ng-click="start()">Start the Quiz</button>
+<div class="jumbotron">
+  <h1>Who Should you Vote For?</h1>
+  <p>Take our quiz to find out which candidate you are most aligned with.</p>
+  <button id="inProgess" ng-click="start()">Start the Quiz</button>
 </div>
+
+
+
+ 
+<!-- Quiz Questions -->
+
+<div  ng-repeat="issue in issues">
+  <h2>{{issue.question}}</h2>
+
+<div>
+  <label>
+    <input ng-model="issue.answer" type="radio" name="question-{{issue.id}}" id="" value="1" checked>
+    Strongly Favor
+  </label>
+</div>
+<div>
+  <label>
+    <input ng-model="issue.answer" type="radio" name="question-{{issue.id}}" id="" value="2">
+    Favor
+  </label>
+</div>
+<div>
+   <label>
+    <input ng-model="issue.answer" type="radio" name="question-{{issue.id}}" id="" value="3">
+    Neutral
+  </label>
+</div>
+<div>
+ <label>
+    <input ng-model="issue.answer" type="radio" name="question-{{issue.id}}" id="" value="4">
+    Opposed
+  </label>
+</div>
+<div>
+   <label>
+    <input ng-model="issue.answer" type="radio" name="question-{{issue.id}}" id="" value="5">
+    Strongly Opposed
+  </label>
+</div>
+  <button ng-click="submitQuiz()" type="submit" class="btn btn-default">Next</button>
+</div>
+</div>
+
+
+   
+
+
+

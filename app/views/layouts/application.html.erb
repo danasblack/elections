@@ -1,10 +1,6 @@
 
 
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-
-
 
 <!-- Wrap Bootstrap -->
 
@@ -17,15 +13,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
     <title>Numo | Flat Portfolio</title>
     <!-- CSS -->
     <!--===============================================================-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/theme.css" rel="stylesheet">
-    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/css/theme.css" rel="stylesheet">
+    <link href="/assets/css/magnific-popup.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -75,8 +71,13 @@
 
     <!-- INTRO-->
     <!--===============================================================-->
-    
-<%= yield %>
+    <div class="content">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+      <%= yield %>
+
+    </div>
     <!-- PORTFOLIO-->
     <!--===============================================================-->
    
@@ -130,17 +131,7 @@
 
     <!-- CONTACT-->
     <!--===============================================================-->
-    <div class="bg-contact" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <h3>Feel free to contact me for your next project</h3>
-              <!-- YOUR E-MAIL-->
-            <a href="mailto:example@example.com" class="mail"><span class="glyphicon glyphicon-envelope"></span>E-MAIL</a>
-          </div>
-        </div>
-      </div>
-    </div>
+   
 
     <!-- FOOTER-->
     <!--===============================================================-->
@@ -180,10 +171,10 @@
     <!-- JAVASCRIPT-->
     <!--===============================================================-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/smooth-scroll.js"></script>
-    <script src="assets/js/jRespond.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/smooth-scroll.js"></script>
+    <script src="/assets/js/jRespond.min.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
