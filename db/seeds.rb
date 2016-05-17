@@ -132,5 +132,23 @@ CandidateIssue.create(issue_id: issue3.id, candidate_id: gary.id, value: 2)
 CandidateIssue.create(issue_id: issue4.id, candidate_id: gary.id, value: 1)
 CandidateIssue.create(issue_id: issue5.id, candidate_id: gary.id, value: 1)
 
+LocalCandidate.create(
+  name: 'Kim Foxx',
+  position: 'Cook County State Attorney',
+  party_affiliation: 'Democrat',
+  experience: 'Lawyer',
+  background: 'Kim Foxx is an accomplished leader, prosecutor and advocate for children and families in Cook County. She is running to become Cook County State’s Attorney to continue that work, and to restore public faith in a criminal justice system that has failed so many families',
+  image: 'http://earhustle411.com/wp-content/uploads/2016/03/kim-foxx.jpg' 
+)
+
+LocalCandidate.create(
+  name: 'Christopher E. K. Pfannkuche',
+  position: 'Cook County State Attorney',
+  party_affiliation: 'Republican',
+  experience: 'Lawyer',
+  background: 'In Cook County, Christopher served 31 years as a Criminal Prosecutor with the Cook County State’s Attorney’s Office. He served as a Trial Supervisor in the Felony Review Unit, reviewing Murder cases, police shootings, press cases, search warrants, and a variety of other felony cases, while also overseeing a team of prosecutors under him. He spent 20 years in the Felony Trial Division, litigating over 2000 felony cases, and handling over 10,000 felony cases. ',
+  image: 'http://www.votechristopher.com/wp-content/uploads/2015/10/20150926_1020561.jpg' 
+)
+
 
 

@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   patch '/elections/:id' => 'elections#update'
   get '/elections/:id' => 'elections#show'
 
+  get '/localcandidates/:id' => 'localcandidates#show'
+
   post '/ballots' => 'ballots#create'
   get '/ballots/:id' => 'ballots#show'
 
@@ -18,12 +20,14 @@ Rails.application.routes.draw do
   get '/ballotcandidates/:id' => 'ballot_candidates#show' 
 
   get '/quizzes' => 'quizzes#index'
+  get '/quizzes' => 'quizzes#result'
 
   namespace :api do
     namespace :v1 do
       get '/quizapps' => 'quizapps#index'
       post '/quizapps' => 'quizapps#create'
     end
+  
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

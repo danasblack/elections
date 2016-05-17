@@ -28,6 +28,7 @@
       };
       $http.post('/api/v1/quizapps.json', params).then(function(response) {
         console.log(response);
+        $scope.issues.push(params);
       });
     };
 

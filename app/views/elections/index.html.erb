@@ -32,9 +32,8 @@
                 <h3 class="category">More info</h3>
               </a>
         <div class="well well-lg">
-              <h2>Name : <a href ="/elections/<%= candidate.id %>"><%= candidate.name %></a></h2>
-              <p>Political Party: <%= candidate.party_affiliation %></p>
-              <p>Background: <%= candidate.background %></p>
+              <h4>Name : <a href ="/elections/<%= candidate.id %>"><%= candidate.name %></a></h4>
+              <h4>Political Party: <%= candidate.party_affiliation %></h4>
               <input id="accept" name="accept" type="checkbox" value="1"> Compare </input>
             </div>
         </div>
@@ -55,5 +54,21 @@
  </div>
  </div>
 
-
+<div class="row row-portfolio">
+          <% @localcandidates.each do |localcandidate| %>
+            <div class="col-sm-3 margin-bottom-xs">
+              <a class="lightbox wrapper-portfolio" href="<%= localcandidate.image %>">
+                <img class="img-responsive" src="<%= localcandidate.image %>" alt="portfolio-1">
+                <h3 class="category">More info</h3>
+              </a>
+        <div class="well well-lg">
+              <h4>Name : <a href ="/localcandidates/<%= localcandidate.id %>"><%= localcandidate.name %></a></h4>
+              <h4> Running for : <%= localcandidate.position %></h4>
+              <h4>Political Party: <%= localcandidate.party_affiliation %></h4>
+              <input id="accept" name="accept" type="checkbox" value="1"> Compare </input>
+            </div>
+        </div>
+          <% end %>
+        </div>
+     
 

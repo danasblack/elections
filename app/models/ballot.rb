@@ -3,4 +3,5 @@ class Ballot < ActiveRecord::Base
 
   has_many :ballot_candidates
   has_many :party_candidates, through: :ballot_candidates
+  has_many :local_candidates, through: :ballot_candidates
 end

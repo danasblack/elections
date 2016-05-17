@@ -1,6 +1,7 @@
 class ElectionsController < ApplicationController
   def index
     @candidates = PartyCandidate.all
+    @localcandidates = LocalCandidate.all 
     render 'index.html.erb'
   end 
 

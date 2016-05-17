@@ -5,15 +5,18 @@ class Api::V1::QuizappsController < ApplicationController
   end
 
   def create
+
     params[:issues].each do |issue|
-      puts issue[:id]
-      puts issue[:question]
-      puts issue[:answer]
+      UserIssue.create(issue_id: issue[:id], value: issue[:answer])
     end
     render json: {message: "Success"}
     # if issues.match
     #   render "create.html.erb"
     # end
   end
-end
 
+  def answer
+    redirect_to '/quizzes/'
+  end
+
+end
