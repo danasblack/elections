@@ -1,6 +1,6 @@
 /* global angular */
 (function() {
-  angular.module("app").controller("quizApp", function($scope, $http) {
+  angular.module("app").controller("quizApp", function($scope, $http, $log, $window) {
     
     $scope.start = function() {
       $scope.id = 0;
@@ -31,8 +31,13 @@
         $scope.issues.push(params);
       });
     };
-
+    $scope.ClickMeToRedirect = function() {
+      var url = "http://" + $window.location.host + "/quizzes/result";
+      $log.log(url);
+      $window.location.href = url;
+    };
   });
 })();
+
 
     

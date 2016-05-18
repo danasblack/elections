@@ -1,0 +1,6 @@
+<h2> Here are your candidates </h2>
+<% @candidate_scores.each do |candidate_score| %>
+  <%= image_tag candidate_score[:candidate].image %>
+  <p>Candidate name <%= candidate_score[:candidate].name %></p>
+  <p>Candidate score: <%= candidate_score[:score] %></p>
+<% end %>

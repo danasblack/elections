@@ -20,7 +20,8 @@ Rails.application.routes.draw do
   get '/ballotcandidates/:id' => 'ballot_candidates#show' 
 
   get '/quizzes' => 'quizzes#index'
-  get '/quizzes' => 'quizzes#result'
+  post '/quizzes' => 'quizzes#answer'
+  get '/quizzes/result' => 'quizzes#result'
 
   namespace :api do
     namespace :v1 do

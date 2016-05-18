@@ -24,21 +24,23 @@ button {
 }
 
 
-.container {
+.container-issues {
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding: 100px;
 }
 
-#options {
-  margin: 10px 0;
+.container-background {
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
-.next-question {
-  margin-right: 10px;
+.container-image {
+  margin: 0 auto;
+  text-align: center;
 }
 
-#score {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}

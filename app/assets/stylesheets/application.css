@@ -18,6 +18,26 @@
   margin-top: 100px;
 }
 .jumbotron {
-  background-image: url("Mountrushmore.jpg");
+  background-image: url("presidents-collage.jpg");
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"
+}
+
+/*Sidebar */
+.container { position: left; padding:0 0 0 55px; }
+#sidebar {
+    position: absolute;
+    top:0; bottom:0; left:0;
+    width:170px;
+    background-color: #405a74;
+    color: white;
+}
+
+#header { border:1px solid #000; width:100px; height:20px; 
+    margin:0 0 5px 0;
+}
+#content { border:1px solid #000; width:100px; height:50px;
+    margin:5px 0 5px 0;
+}
+#footer { border:1px solid #000; width:100px; height:20px;
+    margin:5px 0 0 0;
 }
