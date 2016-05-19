@@ -69,3 +69,9 @@ button {
   width: 270px;
   height: 290px;
 }
+
+.carousel img {
+  min-width: 100%;
+}
+
+
