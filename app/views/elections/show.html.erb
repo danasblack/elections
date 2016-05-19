@@ -1,17 +1,22 @@
   <div class="container-image">
-    <div id="sidebar">
+    <div class ="sidebar">
     <ul>
-      <li> Background </li>
-      <li> Issues </li>
+    <div class="container-item">
+      <li><a href="#background"> Background </a></li>
+    </div>  
+    <div class="container-item">
+      <li><a href="#issues"> Issues </a></li>
+    </div>
+    <div class="container-item">
+      <li><a href="#results"> Primary Results </a></li>
+    </div>
     </ul>  
     </div>
-    <div id=
-
-  <h4><img src = <%= @candidate.image %>></h4>
-  <h4> Name : <%= @candidate.name %></h4>
-  <h4> Party Affiliation : <%= @candidate.party_affiliation %></h4>
-  <h4> Experience : <%= @candidate.experience %></h4>
-  <a href="/elections"> Back to all candidates</a>
+    <h4><img src = <%= @candidate.image %>></h4>
+    <h4> Name : <%= @candidate.name %></h4>
+    <h4> Party Affiliation : <%= @candidate.party_affiliation %></h4>
+    <h4> Experience : <%= @candidate.experience %></h4>
+    <a href="/elections"> Back to all candidates</a>
 
   <%= form_tag '/ballotcandidates', method: :post do %>
   <div>
@@ -25,14 +30,14 @@
       <div class="container">
 
         <div class="container-background">      
-            <h2>Background</h2>
+            <h2 id="background">Background</h2>
             <p>
               <h2><%= @candidate.background %></h2>
             </p>
           </div>
 
           <div class="container-issues">
-            <h4>Individual Issues</h4>
+            <h4 id="issues">Individual Issues</h4>
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
                 <span class="sr-only"></span>
@@ -62,7 +67,13 @@
       </div>
     </div>
   </div>
+<div class="container-chart">   
+<h2 id="results"> Current Presidential Primary Results </h2>
+<h2> Democratic Delegate Results </h2>
+<%= pie_chart({"Pledged Delegates - Clinton" => 1768, "Pledged Delegates - Sanders" => 1494, "Super Delegates - Sanders" => 39, "Super Delegates - Clinton" => 538}) %>
+<h2> Total for Sanders - 1839 </h2>
+<h2> Total for Clinton - 2283 </h2>
 </div>
-   
+
 
 

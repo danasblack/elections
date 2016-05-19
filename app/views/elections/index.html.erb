@@ -27,8 +27,7 @@
         <div class="row row-portfolio">
           <% @candidates.each do |candidate| %>
             <div class="col-md-4 margin-bottom-xs">
-              <a class="lightbox wrapper-portfolio" href="<%= candidate.image %>">
-                <img class="img-responsive" src="<%= candidate.image %>" alt="portfolio-1">
+               <h4><img class="img-responsive" src = <%= candidate.image %>></h4>
                 <h3 class="category">More info</h3>
               </a>
         <div class="well well-lg">
@@ -57,8 +56,7 @@
 <div class="row row-portfolio">
           <% @localcandidates.each do |localcandidate| %>
             <div class="col-sm-3 margin-bottom-xs">
-              <a class="lightbox wrapper-portfolio" href="<%= localcandidate.image %>">
-                <img class="img-responsive" src="<%= localcandidate.image %>" alt="portfolio-1">
+              <h4><img class="img-responsive" src = <%= localcandidate.image %>></h4>
                 <h3 class="category">More info</h3>
               </a>
         <div class="well well-lg">

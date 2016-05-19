@@ -15,4 +15,6 @@
 //= require jquery_ujs
 //= require angular
 //= require app
+//= require highchart
+//= require chartkick
 //= require_tree

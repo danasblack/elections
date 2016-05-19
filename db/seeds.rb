@@ -138,7 +138,7 @@ LocalCandidate.create(
   party_affiliation: 'Democrat',
   experience: 'Lawyer',
   background: 'Kim Foxx is an accomplished leader, prosecutor and advocate for children and families in Cook County. She is running to become Cook County State’s Attorney to continue that work, and to restore public faith in a criminal justice system that has failed so many families',
-  image: 'http://earhustle411.com/wp-content/uploads/2016/03/kim-foxx.jpg' 
+  image: 'http://media.nbcchicago.com/images/1200*675/kim+foxx+campaign.jpg' 
 )
 
 LocalCandidate.create(
@@ -150,5 +150,56 @@ LocalCandidate.create(
   image: 'http://www.votechristopher.com/wp-content/uploads/2015/10/20150926_1020561.jpg' 
 )
 
+LocalCandidate.create(
+  name: 'Tammy Duckworth',
+  position: 'U.S. Senate - IL ',
+  party_affiliation: 'Democrat',
+  experience: 'House of Representatives',
+  background: 'Tammy Duckworth is running to represent Illinois in the United States Senate. Following her career as a helicopter pilot in the U.S. Army, Tammy worked as an advocate for Veterans at both the state and federal level. Tammy was elected to the House of Representatives in 2012, where she has been an active voice for Illinois families.',
+  image: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Tammy_Duckworth,_official_portrait,_113th_Congress.jpg' 
+)
 
+LocalCandidate.create(
+  name: 'Mark Kirk',
+  position: 'U.S. Senate - IL ',
+  party_affiliation: 'Republican',
+  experience: 'Senator (IL)',
+  background: 'Mark Kirk represents Illinois in the United States Senate as an independent voice for families from every corner of the greatest state in the nation. With a proven record as a bridge-builder, Mark is a fiscal conservative, social moderate and defense hawk on our national security.',
+  image: 'https://upload.wikimedia.org/wikipedia/commons/f/fb/Mark_Steven_Kirk,_official_photo_portrait_color.jpg' 
+)
 
+LocalCandidate.create(
+  name: 'Bobby Rush',
+  position: 'U.S. Representative - 1st District',
+  party_affiliation: 'Democrat',
+  experience: 'House of Representatives',
+  background: 'Bobby Lee Rush (born November 23, 1946) is the U.S. Representative for Illinois 1st congressional district, serving in Congress for more than two decades; he was first elected in 1992 and took office in 1993. He has since won consecutive re-election.',
+  image: 'https://pbs.twimg.com/profile_images/378800000172084485/f1498b4c9a4df5a036d108993be4bf4b_400x400.jpeg' 
+)
+
+LocalCandidate.create(
+  name: 'August Deuser',
+  position: 'U.S. Representative - 2nd District ',
+  party_affiliation: 'Republican',
+  experience: 'Retired Teacher',
+  background: 'August (O’Neill) Deuser was born and raised on the south side of Chicago. August’s grandfather, Hugh O’Neill, and father, August Deuser, were Chicago Police officers. Mr. Deuser was a police officer for three years before going back to school and becoming a teacher.',
+  image: 'http://dev.deuser.us/wp-content/uploads/2015/01/deuser-216x300.jpeg' 
+)
+
+LocalCandidate.create(
+  name: 'John Morrow',
+  position: 'U.S. Representative - 2nd District',
+  party_affiliation: 'Republican',
+  experience: 'Businessman',
+  background: 'John Morrow is a very successful businessman with a background in imports, retail, and financial sales markets. Hes the epitome of a people person. John relates to the problems and finds solutions.',
+  image: 'https://ballotpedia.org/wiki/images/thumb/b/b2/John_Morrow.jpg/200px-John_Morrow.jpg' 
+)
+
+LocalCandidate.create(
+  name: 'Robin Kelly',
+  position: 'U.S. Representative - 2nd District',
+  party_affiliation: 'Democrat',
+  experience: 'Congress',
+  background: 'Congresswoman Robin Kelly is honored to represent the citizens of Illinois’ 2nd Congressional District.  Since her election in 2013, she has worked to expand economic opportunity and promote public safety, sponsoring numerous bills to generate job growth and end gun violence.',
+  image: 'http://www.gunssavelife.com/wp-content/uploads/2014/07/Bloombergsgirl.jpg' 
+)

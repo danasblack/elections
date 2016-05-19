@@ -27,6 +27,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+   <script src="https://www.google.com/jsapi"></script> 
+  <%= javascript_include_tag "https://www.google.com/jsapi" %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -50,10 +52,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/quizzes">Take the Quiz</a></li>
             <li><a data-scroll href="#skills">Compare</a></li>
-            <li><a data-scroll href="/ballotcandidates">Voter Information</a></li>
-          </ul>
-         
-      <ul class="nav navbar-nav navbar-right">
+            <li><ul class="nav navbar-nav navbar-right">
         <% if current_user == nil %>
          <%= link_to "Log in", "/users/sign_in" %>
          <%= link_to "Sign up", "/users/sign_up" %>
@@ -63,7 +62,10 @@
       <% if current_user %> 
         <li><a href="/ballotcandidates">View Ballot</a></li>
       <% end %>
-      </ul>
+      </ul></li>
+          </ul>
+         
+      
         </div>
       </div>
     </div>

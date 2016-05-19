@@ -34,6 +34,7 @@ button {
 
 .container-background {
   margin: 0 auto;
+  padding-top: 50px;
   text-align: center;
   margin-right: 100px;
   margin-left: 100px;
@@ -44,3 +45,27 @@ button {
   text-align: center;
 }
 
+.container-chart {
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+.sidebar {
+  position: fixed;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  font-size: 18px;
+  background-color: white;
+  position: fixed;
+}
+
+.container-item {
+  padding: 20px;
+  background-color: whitesmoke;
+}
+.img-responsive {
+  padding-left: 50px;
+  width: 270px;
+  height: 290px;
+}
