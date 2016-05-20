@@ -8,6 +8,7 @@ class ElectionsController < ApplicationController
   def show
     candidate_id = params[:id]
     @candidate = PartyCandidate.find_by(id: candidate_id)
+    @can_issues = CandidateIssue.find_by(id: candidate_id)
     render 'show.html.erb'
   end 
 end

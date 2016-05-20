@@ -102,35 +102,35 @@ issue5 = Issue.create(
   question: "Should convicted felons have the right to vote?"
   )
 
-CandidateIssue.create(issue_id: issue1.id, candidate_id: bernie.id, value: 2)
-CandidateIssue.create(issue_id: issue2.id, candidate_id: bernie.id, value: 1)
-CandidateIssue.create(issue_id: issue3.id, candidate_id: bernie.id, value: 3)
-CandidateIssue.create(issue_id: issue4.id, candidate_id: bernie.id, value: 4)
-CandidateIssue.create(issue_id: issue5.id, candidate_id: bernie.id, value: 4)
+CandidateIssue.create(issue_id: issue1.id, candidate_id: bernie.id, value: 5)
+CandidateIssue.create(issue_id: issue2.id, candidate_id: bernie.id, value: 5)
+CandidateIssue.create(issue_id: issue3.id, candidate_id: bernie.id, value: 1)
+CandidateIssue.create(issue_id: issue4.id, candidate_id: bernie.id, value: 1)
+CandidateIssue.create(issue_id: issue5.id, candidate_id: bernie.id, value: 1)
 
-CandidateIssue.create(issue_id: issue1.id, candidate_id: hillary.id, value: 1)
+CandidateIssue.create(issue_id: issue1.id, candidate_id: hillary.id, value: 4)
 CandidateIssue.create(issue_id: issue2.id, candidate_id: hillary.id, value: 5)
-CandidateIssue.create(issue_id: issue3.id, candidate_id: hillary.id, value: 3)
-CandidateIssue.create(issue_id: issue4.id, candidate_id: hillary.id, value: 2)
-CandidateIssue.create(issue_id: issue5.id, candidate_id: hillary.id, value: 2)
+CandidateIssue.create(issue_id: issue3.id, candidate_id: hillary.id, value: 2)
+CandidateIssue.create(issue_id: issue4.id, candidate_id: hillary.id, value: 5)
+CandidateIssue.create(issue_id: issue5.id, candidate_id: hillary.id, value: 4)
 
-CandidateIssue.create(issue_id: issue1.id, candidate_id: donald.id, value: 2)
-CandidateIssue.create(issue_id: issue2.id, candidate_id: donald.id, value: 4)
-CandidateIssue.create(issue_id: issue3.id, candidate_id: donald.id, value: 4)
-CandidateIssue.create(issue_id: issue4.id, candidate_id: donald.id, value: 1)
-CandidateIssue.create(issue_id: issue5.id, candidate_id: donald.id, value: 3)
+CandidateIssue.create(issue_id: issue1.id, candidate_id: donald.id, value: 1)
+CandidateIssue.create(issue_id: issue2.id, candidate_id: donald.id, value: 1)
+CandidateIssue.create(issue_id: issue3.id, candidate_id: donald.id, value: 2)
+CandidateIssue.create(issue_id: issue4.id, candidate_id: donald.id, value: 5)
+CandidateIssue.create(issue_id: issue5.id, candidate_id: donald.id, value: 5)
 
 CandidateIssue.create(issue_id: issue1.id, candidate_id: jill.id, value: 5)
 CandidateIssue.create(issue_id: issue2.id, candidate_id: jill.id, value: 1)
-CandidateIssue.create(issue_id: issue3.id, candidate_id: jill.id, value: 3)
-CandidateIssue.create(issue_id: issue4.id, candidate_id: jill.id, value: 3)
+CandidateIssue.create(issue_id: issue3.id, candidate_id: jill.id, value: 1)
+CandidateIssue.create(issue_id: issue4.id, candidate_id: jill.id, value: 1)
 CandidateIssue.create(issue_id: issue5.id, candidate_id: jill.id, value: 2)
 
 CandidateIssue.create(issue_id: issue1.id, candidate_id: gary.id, value: 2)
-CandidateIssue.create(issue_id: issue2.id, candidate_id: gary.id, value: 2)
+CandidateIssue.create(issue_id: issue2.id, candidate_id: gary.id, value: 4)
 CandidateIssue.create(issue_id: issue3.id, candidate_id: gary.id, value: 2)
-CandidateIssue.create(issue_id: issue4.id, candidate_id: gary.id, value: 1)
-CandidateIssue.create(issue_id: issue5.id, candidate_id: gary.id, value: 1)
+CandidateIssue.create(issue_id: issue4.id, candidate_id: gary.id, value: 4)
+CandidateIssue.create(issue_id: issue5.id, candidate_id: gary.id, value: 3)
 
 LocalCandidate.create(
   name: 'Kim Foxx',
@@ -138,7 +138,7 @@ LocalCandidate.create(
   party_affiliation: 'Democrat',
   experience: 'Lawyer',
   background: 'Kim Foxx is an accomplished leader, prosecutor and advocate for children and families in Cook County. She is running to become Cook County State’s Attorney to continue that work, and to restore public faith in a criminal justice system that has failed so many families',
-  image: 'http://media.nbcchicago.com/images/1200*675/kim+foxx+campaign.jpg' 
+  image: 'http://www.nwherald.com/_internal/cimg!0/a93zgu9ru2jbum15c4a5rqh8ld63la7' 
   )
 
 LocalCandidate.create(
@@ -174,7 +174,7 @@ LocalCandidate.create(
   party_affiliation: 'Democrat',
   experience: 'House of Representatives',
   background: 'Bobby Lee Rush (born November 23, 1946) is the U.S. Representative for Illinois 1st congressional district, serving in Congress for more than two decades; he was first elected in 1992 and took office in 1993. He has since won consecutive re-election.',
-  image: 'https://pbs.twimg.com/profile_images/378800000172084485/f1498b4c9a4df5a036d108993be4bf4b_400x400.jpeg' 
+  image: 'https://rush.house.gov/sites/rush.house.gov/files/BLR%20Portrait%20(Hi%20Res).jpg' 
   )
 
 LocalCandidate.create(

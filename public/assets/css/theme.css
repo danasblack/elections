@@ -191,8 +191,10 @@ hr {
 }
 
 .navbar-brand img {
+    background-image: url("myBallot_logo.jpg");
     width: 150px;
     margin-top: 10px;
+
     /*transition*/
     -webkit-transition: all .22s ease-out;
     -moz-transition: all .22s ease-out;
@@ -497,7 +499,7 @@ hr {
 }
 
 .progress-bar {
-    background-color: white;
+    background-color: green;
 }
 
 @media (max-width:767px) {

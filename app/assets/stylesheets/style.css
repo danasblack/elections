@@ -1,8 +1,8 @@
-body {
+/*body {
   margin: 0 auto;
   text-align: left;
   font-family: 'Helvetica', 'Arial';
-}
+}*/
 
 h2 {
   font-weight: normal;
@@ -32,7 +32,7 @@ button {
   padding: 100px;
 }
 
-.container-background {
+.container-background, .container-issues, .container-chart {
   margin: 0 auto;
   padding-top: 50px;
   text-align: center;
@@ -76,9 +76,12 @@ button {
 }
 
 .well-lg {
-  width: 351px;
-  height: 175px;
+  width: 300px;
+  height: 155px;
   border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
 }
 
 .img-centered {
@@ -87,3 +90,22 @@ button {
   float: none !important;
 }
  
+ #start {
+ }
+
+ #quiz-scroll {
+  margin-bottom: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
+  border-radius: 25px;
+  border: solid;
+  height: 300px;
+  width: 700px;
+  color: black;
+ }
+
+ .multiple-choice-options {
+  text-align: left !important;
+  margin: 30px;
+ }
