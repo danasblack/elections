@@ -11,7 +11,7 @@
       <div class="carousel-inner" role="listbox">
 
         <div class="item active">
-          <img src="http://www.ereferencedesk.com/resources/state-flag/images/us-flag-left-menu.jpg" alt="...">
+          <img src="http://www169.lunapic.com/do-not-link-here-use-hosting-instead/146369620733637?3629778242" alt="...">
           <div class="carousel-caption">
             <h3>Start the quiz</h3>
           </div>
@@ -53,11 +53,9 @@
           </div>
         </div>
         <div class="item">
-          <img src="http://psfinecut.com/images/images/WideSrn-WEB-Background-1_02.jpg" alt="...">
+          <img src="http://www169.lunapic.com/do-not-link-here-use-hosting-instead/146369620733637?3629778242" alt="...">
           <div class="carousel-caption">
-            <h3>Submit</h3>
-            <button ng-click="submitQuiz()" type="submit" class="btn btn-default">Next</button>
-            <a href="/quizzes/result" class="btn btn-default" ng-click="ClickMeToRedirect()">Submit</a></button>
+            <button><a href="/quizzes/result" ng-click="submitQuiz()" type="submit" class="btn btn-default">Submit</button>
           </div>
         </div>
       </div>
@@ -91,4 +89,12 @@
 
   </div>
 </div>
+
+<script type="text/javascript">
+  $('#start-button').on('click', function() {
+    console.log('start-button');
+    $('.carousel').carousel();
+    $('.carousel').carousel(1);
+  });
+</script>
 

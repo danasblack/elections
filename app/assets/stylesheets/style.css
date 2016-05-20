@@ -65,13 +65,25 @@ button {
   background-color: whitesmoke;
 }
 .img-responsive {
-  padding-left: 50px;
   width: 270px;
-  height: 290px;
+  height: 300px;
+  border-radius: 25px;
+  border: solid;
 }
 
 .carousel img {
   min-width: 100%;
 }
 
+.well-lg {
+  width: 351px;
+  height: 175px;
+  border-radius: 25px;
+}
 
+.img-centered {
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
+}
+ 

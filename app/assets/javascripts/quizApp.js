@@ -29,12 +29,10 @@
       $http.post('/api/v1/quizapps.json', params).then(function(response) {
         console.log(response);
         $scope.issues.push(params);
+        var url = "http://" + $window.location.host + "/quizzes/result";
+        $log.log(url);
+        $window.location.href = url;
       });
-    };
-    $scope.ClickMeToRedirect = function() {
-      var url = "http://" + $window.location.host + "/quizzes/result";
-      $log.log(url);
-      $window.location.href = url;
     };
   });
 })();

@@ -27,7 +27,7 @@
     <div class="row row-portfolio">
       <% @candidates.each do |candidate| %>
       <div class="col-md-4 margin-bottom-xs">
-       <h4><img class="img-responsive" src = <%= candidate.image %>></h4>
+       <h4><img class="img-responsive img-centered" src = <%= candidate.image %>></h4>
        <h3 class="category">More info</h3>
        <div class="well well-lg">
         <h4>Name : <a href ="/elections/<%= candidate.id %>"><%= candidate.name %></a></h4>
@@ -36,9 +36,8 @@
       </div>
     </div>
     <% end %>
-  </div>
 </div>
-</div>
+
 
 <div class="bg-portfolio" id="portfolio">
   <div class="container-local">
@@ -54,11 +53,12 @@
       </div>
     </div>
   </div>  
+</div>
 
   <div class="row row-portfolio">
     <% @localcandidates.each do |localcandidate| %>
     <div class="col-md-4 margin-bottom-xs">
-      <h4><img class="img-responsive" src = <%= localcandidate.image %>></h4>
+      <h4><img class="img-responsive img-centered" src = <%= localcandidate.image %>></h4>
       <h3 class="category">More info</h3>
       <div class="well well-lg">
         <h4>Name : <a href ="/localcandidates/<%= localcandidate.id %>"><%= localcandidate.name %></a></h4>
@@ -68,6 +68,7 @@
       </div>
     </div>
     <% end %>
+  </div>
   </div>
 </div>
 
