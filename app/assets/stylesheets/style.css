@@ -91,18 +91,22 @@ button {
 }
  
  #start {
+  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
  }
 
  #quiz-scroll {
-  margin-bottom: 75px;
+  margin-bottom: 150px;
   margin-left: auto;
   margin-right: auto;
   float: none !important;
   border-radius: 25px;
   border: solid;
   height: 300px;
-  width: 700px;
+  width: 1000px;
   color: black;
+  position: left:;
  }
 
  .multiple-choice-options {

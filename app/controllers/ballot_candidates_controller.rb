@@ -18,4 +18,9 @@ class BallotCandidatesController < ApplicationController
   def index
     @ballotcandidates = BallotCandidate.all
   end
+
+  def destroy
+    @ballotcandidate = BallotCandidate.find_by(id: params[:id])
+    @ballotcandidate.destroy
+  end 
 end

@@ -6,23 +6,19 @@
 <h1>Your Ballot</h1>
 
 <div>
-<% @ballotcandidates.each do |ballotcandidate| %>
+  <% @ballotcandidates.each do |ballotcandidate| %>
   <% if ballotcandidate.party_candidate %>
-    <h5><%= ballotcandidate.party_candidate.name %></h5>
-    <%= link_to "Remove item from ballot", "/ballotcandidates/#{ballotcandidate.id}", method: :delete %>
+  <h5><%= ballotcandidate.party_candidate.name %></h5>
+  <%= link_to "Remove item from ballot", "/ballotcandidates/#{ballotcandidate.id}", method: :delete %>
   <% end %>
 </div> 
 <div>
   <% if ballotcandidate.local_candidate %>
-    <h5><%= ballotcandidate.local_candidate.name %></h5>
-    <%= link_to "Remove item from ballot", "/ballotcandidates/#{ballotcandidate.id}", method: :delete %>
+  <h5><%= ballotcandidate.local_candidate.name %></h5>
+  <%= link_to "Remove item from ballot", "/ballotcandidates/#{ballotcandidate.id}", method: :delete %>
   <% end %>
-<% end %>
+  <% end %>
 </div>
-
-<%= form_tag "/ballot", method: :post do %>
-  <%= submit_tag "Confirm Candidate" %>
-<% end %>
 
 
 <h2>Find Your Nearest Polling Location</h2>
@@ -30,8 +26,8 @@
 <script type="text/javascript" src="https://voter-info-tool.appspot.com/js/loader.js"></script>
 <div id="_vit"></div>
 <script type="text/javascript">vit.load({election_id:2000});</script>
-  
-   
- 
+
+
+
 
 <a href="/elections"> Back to all candidates</a>

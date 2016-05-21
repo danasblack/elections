@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get '/ballotcandidates' => 'ballot_candidates#index'
   post '/ballotcandidates' => 'ballot_candidates#create'
   get '/ballotcandidates/:id' => 'ballot_candidates#show' 
+  delete '/ballotcandidates/:id' => 'ballot_candidates#destroy'
 
   get '/quizzes' => 'quizzes#index'
   post '/quizzes' => 'quizzes#answer'
