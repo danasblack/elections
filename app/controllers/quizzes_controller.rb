@@ -1,5 +1,8 @@
 class QuizzesController < ApplicationController
   def index
+    if current_user == nil
+      flash[:alert] = "Please log in before proceeding"
+    end
     render "template.html.erb"
   end 
   

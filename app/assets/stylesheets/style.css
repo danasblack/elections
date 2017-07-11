@@ -23,6 +23,15 @@ button {
   cursor: pointer;
 }
 
+.alert {
+}
+
+#candidate_photo{
+  height: 380px;
+  width: 310px;
+}
+
+
 
 .container-issues {
   margin: 0 auto;
@@ -51,18 +60,21 @@ button {
   margin-right: 200px;
   margin-left: 200px;
 }
-.sidebar {
-  position: fixed;
-  margin-top: 100px;
-  margin-bottom: 200px;
-  font-size: 18px;
-  background-color: white;
-  position: fixed;
-}
 
 .container-item {
   padding: 20px;
   background-color: whitesmoke;
+}
+
+.carousel img {
+  min-width: 100%;
+}
+
+
+.img-centered {
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
 }
 .img-responsive {
   width: 270px;
@@ -71,10 +83,73 @@ button {
   border: solid;
 }
 
-.carousel img {
-  min-width: 100%;
+#local_candidate_page{
+ margin-left: 550px;
 }
 
+#local_candidate_photo {
+  height: 400px;
+  width: 310px;
+}
+ .multiple-choice-options {
+  text-align: left !important;
+  margin: 30px;
+ }
+
+ #new_user {
+  margin-top: 150px;
+ }
+ 
+#result-image {
+  width: 300px;
+  height: 380px;
+}
+
+#result-page {
+   width: 260px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+#result-page-container{
+text-align: center;
+}
+
+.sidebar {
+  position: fixed;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  font-size: 18px;
+  background-color: white;
+  position: fixed;
+}
+ #start {
+  margin-bottom: 5px;
+  margin-left: 350px;
+  margin-right: auto;
+  margin-top: 170px;
+ }
+
+ #quiz_question_button {
+  margin-bottom: 5px;
+  margin-left: 100px;
+  margin-right: auto;
+  margin-top: 260px;
+ }
+
+ #quiz-scroll {
+  margin-bottom: 150px;
+  margin-left: 5px;
+  margin-right: auto;
+  float: none !important;
+  border-radius: 25px;
+  border: solid;
+  height: 300px;
+  width: 900px;
+  color: black;
+  position: left;
+}
+ 
 .well-lg {
   width: 300px;
   height: 155px;
@@ -84,32 +159,3 @@ button {
   float: none !important;
 }
 
-.img-centered {
-  margin-left: auto;
-  margin-right: auto;
-  float: none !important;
-}
- 
- #start {
-  margin-bottom: 150px;
-  margin-left: auto;
-  margin-right: auto;
- }
-
- #quiz-scroll {
-  margin-bottom: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  float: none !important;
-  border-radius: 25px;
-  border: solid;
-  height: 300px;
-  width: 1000px;
-  color: black;
-  position: left:;
- }
-
- .multiple-choice-options {
-  text-align: left !important;
-  margin: 30px;
- }

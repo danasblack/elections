@@ -1,9 +1,22 @@
 
-  <h4><img src = <%= @localcandidate.image %>></h4>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container" id="local_candidate_page">
+  <h4><img src = <%= @localcandidate.image %> id="local_candidate_photo"></h4>
   <h4> Name : <%= @localcandidate.name %></h4>
   <h4> Party Affiliation : <%= @localcandidate.party_affiliation %></h4>
   <h4> Experience : <%= @localcandidate.experience %></h4>
   <a href="/elections"> Back to all candidates</a>
+</div>
 
   <%= form_tag '/ballotcandidates', method: :post do %>
   <div>

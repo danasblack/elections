@@ -18,8 +18,9 @@ donald = PartyCandidate.create(
   party_affiliation: 'Republican',
   experience: 'President, Trump Organization',
   background: 'Donald Trump has never held elective office.', 
-  image: 'https://s3.graphiq.com/sites/default/files/980/media/images/t2/Donald_Trump_6522122.jpg',
+  image: 'https://sites.google.com/a/okee.k12.fl.us/okeechobee-high-school-jrotc/_/rsrc/1485281928995/home/chain-of-command/POTUS%20Trump.jpg?height=280&width=200',
   )
+
 jill = PartyCandidate.create(
   name: 'Jill Stein',
   party_affiliation: 'Green Party',
@@ -183,7 +184,7 @@ LocalCandidate.create(
   party_affiliation: 'Republican',
   experience: 'Retired Teacher',
   background: 'August (O’Neill) Deuser was born and raised on the south side of Chicago. August’s grandfather, Hugh O’Neill, and father, August Deuser, were Chicago Police officers. Mr. Deuser was a police officer for three years before going back to school and becoming a teacher.',
-  image: 'http://dev.deuser.us/wp-content/uploads/2015/01/deuser-216x300.jpeg' 
+  image: 'https://www.alumni.lewisu.edu/image/alumni/IMG_5871-1.jpg' 
   )
 
 LocalCandidate.create(
