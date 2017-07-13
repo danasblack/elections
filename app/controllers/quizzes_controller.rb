@@ -1,10 +1,11 @@
 class QuizzesController < ApplicationController
   def index
     if current_user == nil
-      flash[:alert] = "Please log in before proceeding"
-    end
+      redirect_to '/users/sign_up', alert: "Please sign up or log in to take the quiz"
+    else
     render "template.html.erb"
-  end 
+    end 
+  end
   
   def answer
     @candidates = PartyCandidates.all.shuffle

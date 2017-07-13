@@ -25,12 +25,7 @@
             <button type="button" class="btn btn-default" id="start" aria-hidden="true">Start the quiz</button>
           </a>  
             </div>
-        <div class="alert alert-warning alert-dismissable">
-          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-          <% flash.each do |k, v| %>
-          <div id="<%= k %>"><%= v %></div>
-        <% end %>
-  </div>
+   
           </div>
         </div>
         <div ng-repeat="issue in issues" class="item">
@@ -80,7 +75,7 @@
         <div class="item">
           <img src="http://rjtoursonline.com/wp-content/uploads/2013/07/Mount-Rushmore-Flag.jpg" alt="...">
            <div class="carousel-caption">
-            <button href="/quizzes/result" ng-click="submitQuiz()" type="submit" class="btn btn-default">Submit</button>
+            <button href="/quizzes/result" ng-click="submitQuiz()" type="submit" id="submit_button" class="btn btn-primary btn-lg">Submit Answers</button>
           </div>
         </div>
       </div>

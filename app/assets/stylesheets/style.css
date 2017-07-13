@@ -126,11 +126,24 @@ text-align: center;
   background-color: white;
   position: fixed;
 }
+
+.sign_in_form{
+
+}
+
+.sign_in_page{
+ margin-left: 12px;
+}
+
  #start {
   margin-bottom: 5px;
   margin-left: 350px;
   margin-right: auto;
   margin-top: 170px;
+ }
+
+ #submit_button{
+  margin-bottom: 300px;
  }
 
  #quiz_question_button {
